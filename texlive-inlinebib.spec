@@ -1,3 +1,9 @@
+# revision 22018
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/inlinebib
+# catalog-date 2006-12-12 00:29:31 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-inlinebib
 Version:	20061212
 Release:	1
@@ -45,6 +51,7 @@ and "ibid." contractions.
 %doc %{_texmfdistdir}/doc/bibtex/inlinebib/inlinebib.txt
 %doc %{_texmfdistdir}/doc/bibtex/inlinebib/inlinebib1.gif
 %doc %{_texmfdistdir}/doc/bibtex/inlinebib/inlinebib2.gif
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ and "ibid." contractions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
