@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-inlinebib
-Version:	20061212
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Citations in footnotes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
