@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-inlinebib
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Citations in footnotes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
