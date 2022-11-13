@@ -1,18 +1,12 @@
-# revision 22018
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/inlinebib
-# catalog-date 2006-12-12 00:29:31 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-inlinebib
-Version:	20190228
-Release:	2
+Version:	22018
+Release:	1
 Summary:	Citations in footnotes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ details in footnotes. The footnote details include "op. cit."
 and "ibid." contractions.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,24 +39,10 @@ and "ibid." contractions.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061212-2
-+ Revision: 752793
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061212-1
-+ Revision: 718719
-- texlive-inlinebib
-- texlive-inlinebib
-- texlive-inlinebib
-- texlive-inlinebib
-
