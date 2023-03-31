@@ -1,6 +1,6 @@
 Name:		texlive-inlinebib
 Version:	22018
-Release:	1
+Release:	2
 Summary:	Citations in footnotes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
