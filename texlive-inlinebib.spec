@@ -3,7 +3,7 @@ Version:	22018
 Release:	2
 Summary:	Citations in footnotes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/inlinebib
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inlinebib.doc.r%{version}.tar.xz
